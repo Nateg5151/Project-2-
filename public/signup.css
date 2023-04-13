@@ -1,0 +1,98 @@
+/*Variables for colors*/
+  :root {  
+    --background1: rgb(61, 85, 100); 
+    --background2: rgb(232, 239, 237);
+    --background3: rgb(229, 239, 240);
+  }
+body {
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    flex-flow: column wrap;
+    background-image: url("asset/sign\ up.png");
+    opacity: .9;
+    font-family: 'Open Sans', sans-serif;
+      
+}
+
+.header {
+    background-image: url("asset/sign\ up.png");
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    height: 7em;
+    font-size: large;
+
+
+}
+
+.nav { 
+    list-style-type:none;
+      
+}
+
+a {
+    margin: 1em;
+    text-decoration: none; 
+    color: black; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
+
+.form signup-form signUp-input {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    
+    
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    font-size: 20px;
+    color: VAr(--background1);
+}
+
+#name-signup,
+#email-signup,
+#password-signup{
+    border-color: rgb(166, 213, 211);
+    height: 2.5em;
+    width: 15em;
+    margin-bottom: .5em;
+    border-radius: .5em;
+}
+
+.btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    height: 3em;
+    width: 11em;
+    background-color: rgb(140, 167, 240);
+    color: rgb(232, 239, 237);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:focus{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+.btn:hover{
+    background-color: #862c2c8f;
+    letter-spacing: 2px;
+    transition: 1s ease-in-out;
+}
+
